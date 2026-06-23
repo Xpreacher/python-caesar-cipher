@@ -13,8 +13,8 @@ def caesar(start_text, shift_amount, cipher_direction):
           end_text += char
   print(f"Here's the {cipher_direction}d result: {end_text}")
 
-from art import logo
-print(logo)
+# from art import logo
+# print(logo)
 
 should_continue = True
 while should_continue:
@@ -22,7 +22,10 @@ while should_continue:
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
 
-    shift = shift % 26
+    if shift == 52:
+        shift = shift // 26
+    else:
+        shift = shift % 26
     caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
     running_again = input("Type 'yes' if you want to go again. Otherwise type 'no'. ")
     if running_again == "no":
