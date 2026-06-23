@@ -1,2 +1,19 @@
-# python-caesar-cipher
-A Python Caesar Cipher program built as part of Dr. Angela Yu's 100 Days of Code. The application can encrypt and decrypt messages using a user-defined shift value while preserving spaces, numbers, and special characters.
+# Caesar Cipher
+
+This is my Day 8 project from Dr. Angela Yu's 100 Days of Python course.
+
+## Features
+
+- Encode messages
+- Decode messages
+- Supports symbols and spaces
+- Supports large shift values
+- Restart option
+
+## What I Learned
+
+- Functions
+- Parameters
+- While loops
+- Lists
+- Modulus operator (%)
